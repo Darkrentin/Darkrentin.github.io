@@ -2,6 +2,9 @@
 
 
 /* From Uiverse.io by JaydipPrajapati1910 */
+.account{
+    float: right;
+}
 .discord-button {
     background: transparent;
     position: relative;
