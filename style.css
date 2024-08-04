@@ -2,10 +2,10 @@
 
 
 /* From Uiverse.io by JaydipPrajapati1910 */
-button {
+.discord-button {
     background: transparent;
     position: relative;
-    padding: 5px 15px;
+    padding: 0px 15px;
     display: flex;
     align-items: center;
     font-size: 17px;
@@ -13,7 +13,7 @@ button {
     text-decoration: none;
     cursor: pointer;
     border: 1px solid rgba(88, 101, 242, 1);
-    border-radius: 25px;
+    border-radius: 50px;
     outline: none;
     overflow: hidden;
     color: rgba(88, 101, 242, 1);
@@ -25,11 +25,11 @@ button {
     text-decoration:none;
 }
 
-button span {
+.discord-button span {
     margin: 10px;
 }
 
-button::before {
+.discord-button::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,22 +37,22 @@ button::before {
     bottom: 0;
     margin: auto;
     content: '';
-    border-radius: 50%;
+    border-radius: 50px;
     display: block;
     width: 20em;
-    height: 20em;
+    height: em;
     left: -5em;
     text-align: center;
     transition: box-shadow 0.5s ease-out;
     z-index: -1;
 }
 
-button:hover {
+.discord-button:hover {
     color: #fff;
     border: 1px solid rgba(88, 101, 242, 1);
 }
 
-button:hover::before {
+.discord-button:hover::before {
     box-shadow: inset 0 0 0 10em rgba(88, 101, 242, 1);
 }
 
@@ -64,12 +64,11 @@ button:hover::before {
 
 .username-container{
     background-color: #16161a;
-    width: 200px;
-    display: flex;
+
+    display: inline-block;
     border-radius: 50px;
     padding: 10px;
     justify-content: space-between;
-    display: flex;
     align-items: center;
 }
 
@@ -88,8 +87,8 @@ button:hover::before {
 
 .profile-img {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     overflow: hidden;
 }
 
