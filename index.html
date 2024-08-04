@@ -17,6 +17,7 @@
         <span>se connecter</span>
     </button>
     </a>
+
 </div>
 
 <script>
@@ -49,15 +50,17 @@
             .then(user => {
                 const avatarUrl = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`;
                 document.getElementById('content').innerHTML = `
-
-                <div class="flex items-center gap-4">
-                    <img class="w-10 h-10 rounded-full" src="${avatarUrl}" alt="">
-                    <div class="font-medium dark:text-white">
-                        <div>${user.username}</div>
-                        <div class="text-sm text-gray-500 dark:text-gray-400">test</div>
+                <div class="username-container">
+                    <div class="profile-container">
+                        <div class="profile-img">
+                            <img src="${avatarUrl}" alt="Profile Picture" >
+                        </div>
+                        <div class="profile-description">
+                            <p class="user-title">${user.username}</p>
+                            <p class="username">@qusai_k09</p>
+                        </div>
                     </div>
                 </div>
-
             `;
             })
             .catch(console.error);
